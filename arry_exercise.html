@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRY EXERCISES</title>
+</head>
+
+<body>
+    
+    <script>
+    //EXERCISE 1
+    let cities = ["karachi", "lahore", "islamabad","gujranwala", "faislabad"]
+     console.log(cities)
+    cities.push("multan", "rawalpindi")
+    console.log("after push=>", cities)
+   
+    //EXCERSISE 2
+    let foods = ["pizza","burger","pasta","fried chicken","broast","fries"]
+    console.log(foods)
+    foods.pop()
+    console.log("after pop=>", foods)
+   
+    //EXERCISE 3
+    let colors = ["pink","black","white","blue","brown"]
+    console.log (colors)
+    colors.shift()
+    console.log("after shift=>", colors)
+
+    //EXERCISE 4
+    let programminglanugages=["python","java","c++","c","golang"]
+    console.log(programminglanugages)
+    programminglanugages.unshift("html", "css")
+    console.log("after unshift=>", programminglanugages)
+
+    //EXERCISE 5
+    let fruits = ["bananna","apple","kiwi","manogo","guava","peach","strawberry","pineapple"]
+     let newList = fruits.slice(3, 6)
+     console.log("original arry", fruits.slice(1))
+     console.log("copied arry", newList)
+     
+    //EXERCISE 6
+    let  animals = ["Cat", "Dog", "Elephant", "Monkey", "Cow", "Horse", "Sheep"];
+    animals.splice(2, 0, "Lion", "Tiger");
+    console.log(animals);
+
+    //EXERCISE 7
+    let cars = ["Toyota", "Honda", "Ford", "BMW", "Audi", "Tesla"];
+    cars.splice(2, 2);
+    console.log(cars);
+     
+    //EXERCISE 8
+    let subjects = ["Math", "Physics", "Chemistry", "Biology", "English", "Urdu"];
+    subjects.splice(1, 1, "Computer Science");
+    console.log(subjects);
+
+    //EXERCISE 9
+    let students = ["Ali", "Sara", "Ahmed", "Fatima", "Usman", "Ayesha", "Bilal", "Zainab", "Hamza", "Maria"];
+
+    // 1. Add 2 new students at the end
+    students.push("Khan", "Noor");
+
+    // 2. Remove the first student
+    students.shift();
+
+    // 3. Add Ahmed at the beginning
+    students.unshift("Ahmed");
+
+    // 4. Remove the last student
+    students.pop();
+
+    // 5. Display final array using for loop
+    for(let i = 0; i < students.length; i++) {
+    console.log(students[i]);
+}
+    //EXERCISE 10
+    let mobiles = ["Samsung", "Nokia", "Vivo", "Oppo", "Xiaomi", "Realme", "Huawei", "Infinix"];
+
+    // 1. Add OnePlus at the end
+    mobiles.push("OnePlus");
+
+    // 2. Remove the first brand
+    mobiles.shift();
+
+    // 3. Add Apple at the beginning
+    mobiles.unshift("Apple");
+
+    // 4. Copy last 4 brands into new array using slice()
+    let newMobiles = mobiles.slice(-4);
+
+    // 5. Insert Nothing after the third element using splice()
+    
+    mobiles.splice(3, 0, "Nothing");
+
+     // 6. Display both arrays using for loop
+      console.log("Main Array:");
+     for(let i = 0; i < mobiles.length; i++) {
+      console.log(mobiles[i]);
+}
+
+       console.log("Copied Array:");
+       for(let i = 0; i < newMobiles.length; i++) {
+      console.log(newMobiles[i]);
+} 
+
+
+
+
+
+    </script>
+    </html>
+
